@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Monsivais"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-24 10:07:11 a. m."/>
+        <attribute name="created" value="TW9uc2l2YWlzO0RFU0tUT1AtRENKMjRWVDsyMDE4LTA5LTIzOzEwOjExOjQ5IHAuIG0uOzM0OTA="/>
+        <attribute name="edited" value="TW9uc2l2YWlzO0RFU0tUT1AtRENKMjRWVDsyMDE4LTA5LTIzOzEwOjIwOjU1IHAuIG0uOzE7MzU5NQ=="/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNDM7MjAxOC0wOS0yNDsxMDowNzoxMSBhLiBtLjsxOzMwNTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Introduce la velocidad inicial&quot;" newline="True"/>
+            <declare name="vInicial" type="Real" array="False" size=""/>
+            <input variable="vInicial"/>
+            <output expression="&quot;Introduce la velocidad final&quot;" newline="True"/>
+            <declare name="vFinal" type="Real" array="False" size=""/>
+            <input variable="vFinal"/>
+            <output expression="&quot;Introduce el tiempo&quot;" newline="True"/>
+            <declare name="tiempo" type="Real" array="False" size=""/>
+            <input variable="tiempo"/>
+            <declare name="distancia" type="Real" array="False" size=""/>
+            <assign variable="distancia" expression="((vFinal + vInicial)/2)*tiempo"/>
+            <output expression="&quot;La distancia es&quot;" newline="True"/>
+            <output expression="distancia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

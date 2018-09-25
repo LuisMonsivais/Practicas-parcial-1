@@ -1,0 +1,30 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        System.out.println("Ingresa el valor de X1");
+        double x1Valor;
+        
+        x1Valor = input.nextDouble();
+        System.out.println("Ingresa el valor de X2");
+        double x2Valor;
+        
+        x2Valor = input.nextDouble();
+        System.out.println("Ingresa el valor de Y1");
+        double y1Valor;
+        
+        y1Valor = input.nextDouble();
+        System.out.println("Ingresa el valor de Y2");
+        double y2Valor;
+        
+        y2Valor = input.nextDouble();
+        System.out.println("El valor de la pendente es");
+        int pValor;
+        
+        pValor = y2Valor - y1Valor / x2Valor - x1Valor;
+        System.out.println(pValor);
+    }
+}

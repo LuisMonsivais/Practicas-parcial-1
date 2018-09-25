@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-14 09:50:29 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNDM7MjAxOC0wOS0xNDswODo1NDowNiBhLiBtLjsyOTU2"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNDM7MjAxOC0wOS0xNDswOTo1MDoyOSBhLiBtLjsxOzMwNjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Ingresa el valor de X1&quot;" newline="True"/>
+            <declare name="x1Valor" type="Real" array="False" size=""/>
+            <input variable="x1Valor"/>
+            <output expression="&quot;Ingresa el valor de X2&quot;" newline="True"/>
+            <declare name="x2Valor" type="Real" array="False" size=""/>
+            <input variable="x2Valor"/>
+            <output expression="&quot;Ingresa el valor de Y1&quot;" newline="True"/>
+            <declare name="y1Valor" type="Real" array="False" size=""/>
+            <input variable="y1Valor"/>
+            <output expression="&quot;Ingresa el valor de Y2&quot;" newline="True"/>
+            <declare name="y2Valor" type="Real" array="False" size=""/>
+            <input variable="y2Valor"/>
+            <output expression="&quot;El valor de la pendente es&quot;" newline="True"/>
+            <declare name="pValor" type="Integer" array="False" size=""/>
+            <assign variable="pValor" expression="y2Valor - y1Valor/x2Valor - x1Valor"/>
+            <output expression="pValor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

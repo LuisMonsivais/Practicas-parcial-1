@@ -1,0 +1,9 @@
+print("Ingresa la base menor")
+baseMenor = float(input())
+print("Ingresa la base mayor")
+baseMayor = float(input())
+print("Ingresa la altura")
+alturaH = float(input())
+area = (baseMenor + baseMayor) / 2 * alturaH
+print("El area es")
+print(area)

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-13 09:38:16 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNDM7MjAxOC0wOS0xMzswOToxODo0MyBhLiBtLjsyOTU3"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNDM7MjAxOC0wOS0xMzswOTozODoxNiBhLiBtLjsxOzMwNjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Ingresa la base menor&quot;" newline="True"/>
+            <declare name="baseMenor" type="Real" array="False" size=""/>
+            <input variable="baseMenor"/>
+            <output expression="&quot;Ingresa la base mayor&quot;" newline="True"/>
+            <declare name="baseMayor" type="Real" array="False" size=""/>
+            <input variable="baseMayor"/>
+            <output expression="&quot;Ingresa la altura&quot;" newline="True"/>
+            <declare name="alturaH" type="Real" array="False" size=""/>
+            <input variable="alturaH"/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <assign variable="Area" expression="((baseMenor + baseMayor)/2)* alturaH"/>
+            <output expression="&quot;El area es&quot;" newline="True"/>
+            <output expression="Area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

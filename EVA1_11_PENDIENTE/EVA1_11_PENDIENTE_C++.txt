@@ -1,0 +1,52 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "Ingresa el valor de X1" << endl;
+    double x1Valor;
+    
+    cin >> x1Valor;
+    cout << "Ingresa el valor de X2" << endl;
+    double x2Valor;
+    
+    cin >> x2Valor;
+    cout << "Ingresa el valor de Y1" << endl;
+    double y1Valor;
+    
+    cin >> y1Valor;
+    cout << "Ingresa el valor de Y2" << endl;
+    double y2Valor;
+    
+    cin >> y2Valor;
+    cout << "El valor de la pendente es" << endl;
+    int pValor;
+    
+    pValor = y2Valor - y1Valor / x2Valor - x1Valor;
+    cout << pValor << endl;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

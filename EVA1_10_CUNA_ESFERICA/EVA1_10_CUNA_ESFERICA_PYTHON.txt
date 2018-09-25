@@ -1,0 +1,7 @@
+print("Ingresa lel valor del radio")
+radio = float(input())
+print("Ingresa los grados")
+grados = float(input())
+print("El volumen de tu cuna esferica es")
+volumen = float(4) / 3 * (3.1416 * radio * radio * radio / 360) * grados
+print(volumen)

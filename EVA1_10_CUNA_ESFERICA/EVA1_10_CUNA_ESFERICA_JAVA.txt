@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        System.out.println("Ingresa lel valor del radio");
+        double radio;
+        
+        radio = input.nextDouble();
+        System.out.println("Ingresa los grados");
+        double grados;
+        
+        grados = input.nextDouble();
+        System.out.println("El volumen de tu cuna esferica es");
+        double volumen;
+        
+        volumen = (double) 4 / 3 * (3.1416 * radio * radio * radio / 360) * grados;
+        System.out.println(volumen);
+    }
+}

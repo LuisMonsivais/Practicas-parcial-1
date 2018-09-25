@@ -1,0 +1,3 @@
+iVal = 10
+sCade = "¡Hola mundo!"
+print(sCade)

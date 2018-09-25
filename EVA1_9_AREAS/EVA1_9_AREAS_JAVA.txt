@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        System.out.println("Ingresa la base menor");
+        double baseMenor;
+        
+        baseMenor = input.nextDouble();
+        System.out.println("Ingresa la base mayor");
+        double baseMayor;
+        
+        baseMayor = input.nextDouble();
+        System.out.println("Ingresa la altura");
+        double alturaH;
+        
+        alturaH = input.nextDouble();
+        double area;
+        
+        area = (baseMenor + baseMayor) / 2 * alturaH;
+        System.out.println("El area es");
+        System.out.println(area);
+    }
+}

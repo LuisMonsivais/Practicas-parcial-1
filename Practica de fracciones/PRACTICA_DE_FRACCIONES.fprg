@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-24 06:30:36 p. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNDM7MjAxOC0wOS0xMzswOToxODo0MyBhLiBtLjsyOTU3"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNDM7MjAxOC0wOS0yNDsxMDowNzowNyBhLiBtLjszOzMwNTk="/>
+        <attribute name="edited" value="TW9uc2l2YWlzO0RFU0tUT1AtRENKMjRWVDsyMDE4LTA5LTI0OzA2OjMwOjM2IHAuIG0uOzY7MzYwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Introduce el numerador de la fracci&#243;n 1&quot;" newline="True"/>
+            <declare name="nFraccion1" type="Real" array="False" size=""/>
+            <input variable="nFraccion1"/>
+            <output expression="&quot;Introduce el denominador de la fracci&#243;n 1&quot;" newline="True"/>
+            <declare name="dFraccion1" type="Real" array="False" size=""/>
+            <input variable="dFraccion1"/>
+            <output expression="&quot;Introduce el numerador de la fracci&#243;n 2&quot;" newline="True"/>
+            <declare name="nFraccion2" type="Real" array="False" size=""/>
+            <input variable="nFraccion2"/>
+            <output expression="&quot;Introduce el denominador de la fracci&#243;n 2&quot;" newline="True"/>
+            <declare name="dFraccion2" type="Real" array="False" size=""/>
+            <input variable="dFraccion2"/>
+            <declare name="Suma" type="Real" array="False" size=""/>
+            <assign variable="Suma" expression="(nFraccion1*dFraccion2)+(nFraccion2*dFraccion1)/(dFraccion1*dFraccion2)"/>
+            <output expression="&quot;La suma es &quot;" newline="True"/>
+            <output expression="Suma" newline="True"/>
+            <declare name="Resta" type="Real" array="False" size=""/>
+            <assign variable="Resta" expression="(nFraccion1*dFraccion2)-(nFraccion2*dFraccion1)/(dFraccion1*dFraccion2)"/>
+            <output expression="&quot;La resta es &quot;" newline="True"/>
+            <output expression="Resta" newline="True"/>
+            <declare name="Multiplicacion" type="Real" array="False" size=""/>
+            <assign variable="Multiplicacion" expression="(nFraccion1*nFraccion2)/(dFraccion1*dFraccion2)"/>
+            <output expression="&quot;La multiplicaci&#243;n es &quot;" newline="True"/>
+            <output expression="Multiplicacion" newline="True"/>
+            <declare name="Division" type="Real" array="False" size=""/>
+            <assign variable="Division" expression="(dFraccion1*nFraccion2)/(nFraccion1*dFraccion2)"/>
+            <output expression="&quot;La divisi&#243;n es &quot;" newline="True"/>
+            <output expression="Division" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

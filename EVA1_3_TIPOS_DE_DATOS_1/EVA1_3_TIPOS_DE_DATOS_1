@@ -1,0 +1,21 @@
+/*PRACTICA PARA EVALUAR TIPOS DE DATOS*/
+
+/**
+ *
+ * @author Luis Arturo Monsivais Vargas
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //DECLARACION DE UN ARREGLO --> lista de variables del mismo tipo
+        //(tipo de dato) (nombre identificador)
+        //int[] iArreglo = new int[1000000000]; //UN ARREGLO DE 4GB
+        byte[] iArregloByte = new byte[100000000]; //UN ARREGLO DE 1GB
+        System.out.println("hola mundo" + iArregloByte);
+    }
+    
+}

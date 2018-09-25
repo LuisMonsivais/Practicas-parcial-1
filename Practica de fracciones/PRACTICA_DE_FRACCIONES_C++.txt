@@ -1,0 +1,67 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "Introduce el numerador de la fracción 1" << endl;
+    double nFraccion1;
+    
+    cin >> nFraccion1;
+    cout << "Introduce el denominador de la fracción 1" << endl;
+    double dFraccion1;
+    
+    cin >> dFraccion1;
+    cout << "Introduce el numerador de la fracción 2" << endl;
+    double nFraccion2;
+    
+    cin >> nFraccion2;
+    cout << "Introduce el denominador de la fracción 2" << endl;
+    double dFraccion2;
+    
+    cin >> dFraccion2;
+    double suma;
+    
+    suma = nFraccion1 * dFraccion2 + nFraccion2 * dFraccion1 / (dFraccion1 * dFraccion2);
+    cout << "La suma es " << endl;
+    cout << suma << endl;
+    double resta;
+    
+    resta = nFraccion1 * dFraccion2 - nFraccion2 * dFraccion1 / (dFraccion1 * dFraccion2);
+    cout << "La resta es " << endl;
+    cout << resta << endl;
+    double multiplicacion;
+    
+    multiplicacion = nFraccion1 * nFraccion2 / (dFraccion1 * dFraccion2);
+    cout << "La multiplicación es " << endl;
+    cout << multiplicacion << endl;
+    double division;
+    
+    division = dFraccion1 * nFraccion2 / (nFraccion1 * dFraccion2);
+    cout << "La división es " << endl;
+    cout << division << endl;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}
